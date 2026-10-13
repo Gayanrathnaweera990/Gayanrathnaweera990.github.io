@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gayan Rathnaweera | Founder & Digital Creator</title>
+<meta name="description" content="Gayan Rathnaweera: Founder of SkyNet V2Ray Internet Access, Co-Founder of Uncover Ceylon, digital and content creator reaching a global audience.">
+<meta property="og:title" content="Gayan Rathnaweera | Digital Creator Universe">
+<meta property="og:description" content="Founder, co-founder and content creator building for a global audience.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#060b18;--bg2:#0a1226;--ink:#f4f8ff;--mute:#9fb0cc;--blue:#2f7bff;--cyan:#22e4ff;--glass:rgba(255,255,255,.05);--line:rgba(120,170,255,.18)}
+:root[data-theme="light"]{--bg:#f3f7ff;--bg2:#e6eefc;--ink:#0a1226;--mute:#46587a;--glass:rgba(10,30,80,.05);--line:rgba(30,80,200,.2)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.65 Inter,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:Sora,system-ui,sans-serif;line-height:1.1}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+.wrap{max-width:1100px;margin:auto;padding:0 20px}
+section{padding:90px 0}
+h2{font-size:clamp(28px,5vw,44px);margin-bottom:12px}
+.sub{color:var(--mute);max-width:60ch;margin-bottom:36px}
+nav{position:fixed;inset:0 0 auto;z-index:20;backdrop-filter:blur(14px);background:color-mix(in srgb,var(--bg) 70%,transparent);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+.logo{font:800 18px Sora;letter-spacing:.5px}
+.links{display:flex;gap:18px;font-size:14px;color:var(--mute)}
+.links a:hover{color:var(--cyan)}
+.tools{display:flex;gap:8px}
+button{font:inherit;cursor:pointer}
+.chip{background:var(--glass);border:1px solid var(--line);color:var(--ink);padding:7px 14px;border-radius:99px;font-size:13px;transition:.2s}
+.chip:hover,.chip.on{border-color:var(--cyan);color:var(--cyan)}
+.btn{display:inline-block;padding:13px 26px;border-radius:12px;font-weight:500;border:1px solid var(--line);background:var(--glass);transition:.25s}
+.btn.main{background:linear-gradient(135deg,var(--blue),var(--cyan));color:#021024;border:0;font-weight:600}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(34,228,255,.25)}
+#hero{min-height:100vh;display:flex;align-items:center;position:relative;padding-top:60px}
+#trails{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+#hero .wrap{position:relative;z-index:1}
+.role{color:var(--cyan);font-weight:500;margin-bottom:14px}
+h1{font-size:clamp(44px,10vw,104px);font-weight:800;letter-spacing:-2px}
+.lead{font-size:clamp(17px,2.2vw,21px);color:var(--mute);max-width:56ch;margin:22px 0 32px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:var(--glass);border:1px solid var(--line);border-radius:18px;padding:26px;backdrop-filter:blur(10px);transition:.3s;position:relative;overflow:hidden}
+.card:hover{border-color:var(--cyan);transform:translateY(-5px)}
+.card .tag{font-size:12px;color:var(--cyan);margin-bottom:8px}
+.card h3{font-size:21px;margin-bottom:8px}
+.card p{color:var(--mute);font-size:15px}
+.card .more{max-height:0;opacity:0;transition:.35s;font-size:14px;color:var(--ink)}
+.card:hover .more,.card:focus-within .more{max-height:120px;opacity:1;margin-top:12px}
+.card a.go{display:inline-block;margin-top:14px;color:var(--cyan);font-size:14px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.tile{aspect-ratio:16/10;border-radius:16px;border:1px dashed var(--line);display:flex;flex-direction:column;justify-content:flex-end;padding:16px;background:linear-gradient(160deg,rgba(47,123,255,.18),transparent 60%),var(--glass)}
+.tile small{color:var(--cyan)}
+.tile.hide{display:none}
+.timeline{border-left:2px solid var(--line);padding-left:26px;display:grid;gap:30px}
+.timeline div{position:relative}
+.timeline div::before{content:"";position:absolute;left:-34px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--cyan);box-shadow:0 0 14px var(--cyan)}
+.timeline b{font-family:Sora;font-size:18px}
+.timeline span{display:block;color:var(--cyan);font-size:13px}
+.timeline p{color:var(--mute)}
+.pills{display:flex;flex-wrap:wrap;gap:10px}
+.pills span{padding:8px 16px;border:1px solid var(--line);border-radius:99px;background:var(--glass);font-size:14px}
+.plat{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.plat span{color:var(--mute);font-size:13px}
+.note{font-size:13px;color:var(--mute);margin-top:18px;border-left:3px solid var(--blue);padding-left:12px}
+#recruiter{display:none;background:var(--bg2);border-bottom:1px solid var(--line)}
+body.rec #recruiter{display:block}
+body.rec .full{display:none}
+body.rec #hero{min-height:auto;padding:110px 0 30px}
+body.rec #trails{display:none}
+.kv{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.kv div{background:var(--glass);border:1px solid var(--line);border-radius:14px;padding:18px}
+.kv b{display:block;color:var(--cyan);font-size:13px;margin-bottom:4px}
+footer{padding:40px 0;text-align:center;color:var(--mute);font-size:14px;border-top:1px solid var(--line)}
+@media(max-width:760px){.links{display:none}section{padding:64px 0}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a class="logo" href="#hero">GAYAN</a>
+  <div class="links"><a href="#projects">Projects</a><a href="#hub">Creator Hub</a><a href="#work">Content</a><a href="#journey">Journey</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+  <div class="tools">
+    <button class="chip" id="recBtn" aria-pressed="false">Recruiter mode</button>
+    <button class="chip" id="themeBtn" aria-label="Toggle light or dark theme">Light</button>
+  </div>
+</div></nav>
+
+<header id="hero">
+  <canvas id="trails" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <p class="role">Founder · Co-Founder · Digital Creator</p>
+    <h1>Gayan<br>Rathnaweera</h1>
+    <p class="lead">I'm 21, from Sri Lanka. I run SkyNet V2Ray Internet Access, co-founded Uncover Ceylon, and build social media communities and content for a global audience.</p>
+    <div class="cta">
+      <a class="btn main" href="#projects">Explore my work</a>
+      <a class="btn" href="CV.pdf">View my CV</a>
+      <a class="btn" href="#contact">Contact me</a>
+    </div>
+  </div>
+</header>
+
+<!-- RECRUITER VIEW (shown only in Recruiter mode) -->
+<section id="recruiter"><div class="wrap">
+  <h2>Recruiter summary</h2>
+  <p class="sub">The key facts, on one screen.</p>
+  <div class="kv">
+    <div><b>Current roles</b>Founder &amp; Chief, SkyNet V2Ray Internet Access<br>Co-Founder, Uncover Ceylon</div>
+    <div><b>Focus</b>Content creation, social media growth, community management, digital products</div>
+    <div><b>Audience</b>Global, with a focus on foreign audiences</div>
+    <div><b>Platforms managed</b>YouTube, Facebook, TikTok, Instagram, X, Threads, Discord, Reddit, Telegram</div>
+    <div><b>Contact</b><a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></div>
+    <div><b>CV</b><a href="CV.pdf">Download CV (PDF)</a></div>
+  </div>
+</div></section>
+
+<section id="projects" class="full"><div class="wrap">
+  <h2>Featured projects</h2>
+  <p class="sub">Hover or tap a card to see more.</p>
+  <div class="grid">
+    <article class="card" tabindex="0">
+      <div class="tag">Founder · Internet services</div><h3>SkyNet V2Ray Internet Access</h3>
+      <p>An internet access service I founded and lead as Chief.</p>
+      <div class="more">Add: what it offers, who it serves, how long it has run, and your role day to day.<br><a class="go" href="#">Visit project</a></div>
+    </article>
+    <article class="card" tabindex="0">
+      <div class="tag">Co-Founder · Travel &amp; media</div><h3>Uncover Ceylon</h3>
+      <p>A Sri Lanka focused brand and social media presence, built with my co-founders.</p>
+      <div class="more">Add: what Uncover Ceylon covers, your role in content and social media, and results you can verify.<br><a class="go" href="https://uncoverceylon.com">uncoverceylon.com</a></div>
+    </article>
+    <article class="card" tabindex="0">
+      <div class="tag">Creator · Social media</div><h3>Independent content channels</h3>
+      <p>My own channels and communities across many platforms.</p>
+      <div class="more">Add: your best channel, what you post, and your posting rhythm.<br><a class="go" href="#hub">See all platforms</a></div>
+    </article>
+  </div>
+</div></section>
+
+<section id="hub" class="full" style="background:var(--bg2)"><div class="wrap">
+  <h2>Creator Hub</h2>
+  <p class="sub">All my channels and communities in one place. Replace each # with your real link.</p>
+  <div class="grid">
+    <a class="card plat" href="#"><b>YouTube</b><span>Videos</span></a>
+    <a class="card plat" href="#"><b>TikTok</b><span>Short video</span></a>
+    <a class="card plat" href="#"><b>Instagram</b><span>Reels &amp; posts</span></a>
+    <a class="card plat" href="#"><b>Facebook Pages</b><span>Community</span></a>
+    <a class="card plat" href="#"><b>X (Twitter)</b><span>Updates</span></a>
+    <a class="card plat" href="#"><b>Threads</b><span>Conversations</span></a>
+    <a class="card plat" href="#"><b>Discord</b><span>Community</span></a>
+    <a class="card plat" href="#"><b>Reddit</b><span>Communities</span></a>
+    <a class="card plat" href="#"><b>Telegram</b><span>Groups</span></a>
+  </div>
+  <p class="note">Results: add real numbers here only when you can show proof (screenshots or analytics), with the source and date range. Example: "YouTube, 90-day views: X, source: YouTube Studio, Jan to Mar 2026."</p>
+</div></section>
+
+<section id="work" class="full"><div class="wrap">
+  <h2>Content showcase</h2>
+  <p class="sub">Videos, designs and branding. Filter by type.</p>
+  <div class="filters" role="group" aria-label="Filter content">
+    <button class="chip on" data-f="all">All</button><button class="chip" data-f="video">Video</button><button class="chip" data-f="design">Design</button><button class="chip" data-f="brand">Branding</button><button class="chip" data-f="ai">AI content</button>
+  </div>
+  <div class="grid" id="tiles">
+    <div class="tile" data-c="video"><small>Video</small>Your best YouTube video</div>
+    <div class="tile" data-c="video"><small>Video</small>Your best TikTok or Reel</div>
+    <div class="tile" data-c="design"><small>Design</small>Thumbnail or poster</div>
+    <div class="tile" data-c="brand"><small>Branding</small>Uncover Ceylon branding</div>
+    <div class="tile" data-c="ai"><small>AI content</small>AI-assisted creative work</div>
+    <div class="tile" data-c="design"><small>Design</small>Social media graphic</div>
+  </div>
+</div></section>
+
+<section id="journey" class="full" style="background:var(--bg2)"><div class="wrap">
+  <h2>My journey</h2>
+  <p class="sub">Edit the dates and details to match your real timeline.</p>
+  <div class="timeline">
+    <div><span>Year</span><b>Started creating content</b><p>Began making social media content and growing my first channels.</p></div>
+    <div><span>Year</span><b>Grew to a global audience</b><p>Started producing content for foreign audiences across several platforms.</p></div>
+    <div><span>Year</span><b>Co-Founder, Uncover Ceylon</b><p>Joined the founding team and took on social media and content.</p></div>
+    <div><span>Year</span><b>Founder &amp; Chief, SkyNet V2Ray Internet Access</b><p>Launched and now lead the service.</p></div>
+    <div><span>Now</span><b>Currently building</b><p>New projects, tools I'm learning and upcoming content go here.</p></div>
+  </div>
+</div></section>
+
+<section id="skills" class="full"><div class="wrap">
+  <h2>Skills</h2>
+  <p class="sub">What I do, and the tools I use.</p>
+  <div class="pills">
+    <span>Content creation</span><span>Video editing</span><span>Social media management</span><span>Community building</span><span>Graphic design</span><span>Branding</span><span>Audience growth</span><span>Team leadership</span><span>Business management</span><span>AI tools</span>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <h2>Let's work together</h2>
+  <p class="sub">Jobs, collaborations and partnerships are welcome.</p>
+  <div class="cta">
+    <a class="btn main" href="mailto:YOUR_EMAIL@example.com">Email me</a>
+    <a class="btn" href="#">LinkedIn</a>
+    <a class="btn" href="#">Telegram</a>
+  </div>
+</div></section>
+
+<footer>© 2026 Gayan Rathnaweera</footer>
+
+<script>
+// Theme toggle
+const root=document.documentElement,tb=document.getElementById('themeBtn');
+tb.onclick=()=>{const l=root.dataset.theme==='light';root.dataset.theme=l?'dark':'light';tb.textContent=l?'Light':'Dark'};
+// Recruiter mode
+const rb=document.getElementById('recBtn');
+rb.onclick=()=>{const on=document.body.classList.toggle('rec');rb.classList.toggle('on',on);rb.setAttribute('aria-pressed',on);rb.textContent=on?'Full site':'Recruiter mode';scrollTo(0,0)};
+// Content filters
+document.querySelectorAll('.filters .chip').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.filters .chip').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+  document.querySelectorAll('#tiles .tile').forEach(t=>t.classList.toggle('hide',b.dataset.f!=='all'&&t.dataset.c!==b.dataset.f));
+});
+// Hero light trails
+(()=>{
+  const c=document.getElementById('trails'),x=c.getContext('2d');
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  let w,h,L=[];
+  const size=()=>{w=c.width=c.offsetWidth;h=c.height=c.offsetHeight};size();addEventListener('resize',size);
+  const mk=()=>({x:Math.random()*w,y:h+20,s:.6+Math.random()*1.6,len:60+Math.random()*120,col:Math.random()>.5?'34,228,255':'47,123,255'});
+  for(let i=0;i<24;i++){const t=mk();t.y=Math.random()*h;L.push(t)}
+  (function f(){
+    x.clearRect(0,0,w,h);
+    L.forEach((t,i)=>{
+      const g=x.createLinearGradient(t.x,t.y,t.x,t.y+t.len);
+      g.addColorStop(0,`rgba(${t.col},.7)`);g.addColorStop(1,`rgba(${t.col},0)`);
+      x.strokeStyle=g;x.lineWidth=1.5;x.beginPath();x.moveTo(t.x,t.y);x.lineTo(t.x,t.y+t.len);x.stroke();
+      t.y-=t.s;if(t.y+t.len<0)L[i]=mk();
+    });
+    requestAnimationFrame(f);
+  })();
+})();
+</script>
+</body>
+</html>
